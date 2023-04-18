@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800;900&family=Roboto:wght@300;400;700&display=swap');
+
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+	color: #3c3c3c;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f9f9fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #3c3c3c;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About Us Landing
+--------------------------------------------------------------*/
+#about-land {
+  height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment:scroll;
+	background-size: cover;
+	overflow: hidden;
+  background: linear-gradient(to bottom, rgba(66, 71, 92, 0.3) 0%, rgba(66, 70, 92, 0.3) 100%), url(https://images.unsplash.com/photo-1481833761820-0509d3217039?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+}
+
+#about-land h1{
+    text-align: center;
+    margin-top: 6rem;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+/*--------------------------------------------------------------
+# What We Are
+--------------------------------------------------------------*/
+#about {
+  background-color: #fff;
+}
+
+#about .section-title{
+    width:50%;
+    margin: 4rem auto;
+}
+
+@media (max-width: 992px) {
+	#about .section-title {
+		width: 75%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Who We Are
+--------------------------------------------------------------*/
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+ 
+.team .member .member-info {
+  padding: 25px 20px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #5ac5f1;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  color: #92929b;
+}

@@ -1,0 +1,138 @@
+/* 
+#e50163 pink
+#5ac5f1 blue
+#ffee00 yellow
+#3c3c3c black
+#f68e56 orange */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 200vh;
+}
+
+
+/*  Section 2  */
+
+.cover {
+    width: 100%;
+    height: 50vmin;
+    /* Photo  */
+    background: url("https://www.thesprucecrafts.com/thmb/CiKtuLZDX-jOwdgZG64WpKSQj4k=/1500x844/smart/filters:no_upscale()/types-of-papers-used-for-crafting-2585113-FINAL-31ea66957fd740bd95c490c166395ac3.jpg");
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.cover .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 19vmin;
+}
+
+.cover .content>h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cover .content>p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 30rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.349);
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+    font-size: 5rem;
+    color: rgb(90, 197, 241);
+    font-family: 'Raleway', sans-serif;
+}
+
+.numbers .rect>p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+
+.learnButton {
+    color: rgb(90, 197, 241);
+    font-family: 'Raleway', sans-serif;
+}
+
+.Last-two .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+
+.Last-two .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+
+.Last-two .row .col-md-5 img {
+    padding-top: 100px;
+    width: 90%;
+}
+
+.Last-two {
+    --bggradient: linear-gradient(to bottom, #ffffff, #e50163);
+    background: var(--bggradient);
+}
+
+.Last-two .container .col-md-7 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.Last-two .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+
+}
+
+.Last-two .container .col-md-7 h1 {
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Last-two .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+}

@@ -1,0 +1,195 @@
+/* 
+#e50163 pink
+#5ac5f1 blue
+#ffee00 yellow
+#3c3c3c black
+#f68e56 orange */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+body{
+    background: #fff;
+    min-height: 200vh;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+#menu{
+    height: auto;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+
+/* Carousel Header */
+#carousel-item{
+    height: 32rem;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+    #carousel-item .container{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 60px;
+    }
+    #carousel-item h1{
+        font-family:'Raleway', sans-serif;
+        font-weight: 800;
+    }
+    .overlay-image{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.7;
+    }
+
+
+
+/* Cafe Menu Div */
+.title h1{
+    font-family: 'Raleway', 'sans serif';
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+    section{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px auto;
+    }
+    section ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    section ul li{
+        list-style: none;
+        background: #f68e56;
+        padding: 12px 20px;
+        margin: 5px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    section ul li.active{
+        background: #3c3c3c;
+        color: #fff;
+    }
+    .product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .product .itemBox{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+        display: block;
+    }
+    @media (max-width: 420px){
+        .product .itemBox{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    @media (max-width: 280px){
+        .product .itemBox{
+            width: 250px;
+            height: 250px;
+        }
+    }
+    .product .itemBox.hide{
+        display: none;
+    }
+    .product .itemBox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overlayCold {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(90, 197, 241, 0.7);
+    }
+    .itemBox:hover .overlayCold {
+        opacity: 1;
+    }
+    .overlayHot {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(133, 46, 84, 0.7);
+    }
+    .itemBox:hover .overlayHot {
+        opacity: 1;
+    }
+    .overlaySW {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(246, 142, 86, 0.7);
+    }
+    .itemBox:hover .overlaySW {
+        opacity: 1;
+    }
+    .text h4{
+        font-family: 'Raleway', 'sans serif';
+        font-weight: 700;
+    }
+    .text {
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
